@@ -11,8 +11,8 @@ const authInitialState = {
   user: { name: null, email: null },
   token: null,
   isLoggedIn: false,
-  //fethCurrentUser: false,
-  fethCurrentUser: true,
+  fethCurrentUser: false,
+  //fethCurrentUser: true,
   authStatus: false,
 };
 
@@ -64,8 +64,10 @@ export const authReducer = createReducer(authInitialState, {
     state.user = action.payload;
     state.isLoggedIn = true;
     state.fethCurrentUser = false;
+    //state.fethCurrentUser = true;
   },
   [fetchUserFromServer.rejected]: state => {
     state.fethCurrentUser = false;
+    //state.fethCurrentUser = true;
   },
 });
