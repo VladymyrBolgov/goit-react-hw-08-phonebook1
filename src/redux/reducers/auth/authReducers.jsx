@@ -11,7 +11,8 @@ const authInitialState = {
   user: { name: null, email: null },
   token: null,
   isLoggedIn: false,
-  fethCurrentUser: false,
+  //fethCurrentUser: false,
+  fethCurrentUser: true,
   authStatus: false,
 };
 
