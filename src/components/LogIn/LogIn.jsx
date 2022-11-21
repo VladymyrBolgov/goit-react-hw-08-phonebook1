@@ -1,4 +1,4 @@
-import Notiflix from 'notiflix'
+import Notiflix from 'notiflix';
 import Button from 'react-bootstrap/Button';
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';

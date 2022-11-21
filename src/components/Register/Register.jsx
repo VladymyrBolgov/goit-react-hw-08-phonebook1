@@ -15,7 +15,7 @@ export default function Register() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-//
+
   useEffect(() => {
     if (authStatus === 'RegError') {
       Notiflix.Notify.failure('Error: incorrectly entered email or password');
@@ -25,7 +25,7 @@ export default function Register() {
   useEffect(() => {
     return () => dispatch(setAuthStatus());
   }, [dispatch]);
-//
+
   const handleInputChange = e => {
     const name = e.target.name;
     const value = e.target.value;
